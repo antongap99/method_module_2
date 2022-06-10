@@ -11,7 +11,7 @@ const itemfour = document.querySelector('.item.item_four');
 const itemFive = document.querySelector('.item.item_five');
 const itemSix = document.querySelector('.item.item_six');
 
-const ProsItemFour = itemTwo.querySelector('.props__item_four');
+const prosItemFour = itemTwo.querySelector('.props__item_four');
 // console.log('ProsItemFour: ', ProsItemFour);
 
 
@@ -30,17 +30,17 @@ const contentFive = itemFive.querySelector('.content');
 console.log('contentThere: ', contentThere);
 
 
-const ProsItemsTwo = itemSix.querySelectorAll('.props__item_two');
+const prosItemsTwo = itemSix.querySelectorAll('.props__item_two');
 
 
 items.prepend(itemOne);
 
 itemOne.after(itemTwo, itemThree);
 
-propsListFour[2].after(ProsItemFour);
+propsListFour[2].after(prosItemFour);
 
 contentFive.append(propsListFive);
 contentThere.append(propsListThree);
 
 
-propsListTwo[7].after(ProsItemsTwo[0], ProsItemsTwo[1]);
+propsListTwo[7].after(prosItemsTwo[0], prosItemsTwo[1]);
