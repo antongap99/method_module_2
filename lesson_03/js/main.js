@@ -1,8 +1,7 @@
 'use strict';
 
 const list = document.querySelector('.main__list');
-console.log('list: ', list);
-console.dir( list);
+
 
 
 const creatElem = (tag, attr) => { 
@@ -11,15 +10,13 @@ const creatElem = (tag, attr) => {
 }
 
 const clear = () => {
-    const ulList = document.querySelectorAll('.list__item');
-        for(let i = 0; i < ulList.length; i++){
-            ulList[i].remove();
-        }
+    const ulList = document.querySelectorAll('.list__item').forEach((li) => {
+        li.remove();
+    });
 }
 
 const del = () => {
-    const ulList = document.querySelectorAll('.list__item');
-    ulList[ulList.length - 1].remove();
+    list.lastElementChild.remove();
 }
 
 
